@@ -288,7 +288,7 @@
 * Metadata defining the synchronization policy for concurrent access
 * ***An optional pa to an individual row in a table***
 * ***The symbolic name of the provider***
-* ***A na to a table or file***
+* ***A name that points to a table or file***
 
 ### Question 9: Which of the following are motivations for content resolvers supporting content observers (choose all that apply):
 
