@@ -4,7 +4,7 @@
 * [Module 1(100%)](https://github.com/CherpakAndrii/Android-App-Components-Services-Local-IPC-and-Content-Providers--QuizAnswers#module-1)
 * [Module 2(90%)](https://github.com/CherpakAndrii/Android-App-Components-Services-Local-IPC-and-Content-Providers--QuizAnswers#module-2)
 * [Module 3(100%)](https://github.com/CherpakAndrii/Android-App-Components-Services-Local-IPC-and-Content-Providers--QuizAnswers#module-3)
-* [Module 4(not ready)](https://github.com/CherpakAndrii/Android-App-Components-Services-Local-IPC-and-Content-Providers--QuizAnswers#module-4)
+* [Module 4(100%)](https://github.com/CherpakAndrii/Android-App-Components-Services-Local-IPC-and-Content-Providers--QuizAnswers#module-4)
 
 # Module 1
 ### Question 1: Which of the following are ways in which the Layers pattern structures software apps and infrastructure (choose all that apply): 
@@ -227,4 +227,79 @@
 * ***A bound service should be used when a client component wants to have an extended conversation with the service***
 
 # Module 4
-## Coming soon
+
+### Question 1: Which of the following are reasons why Android provides a content resolver class (choose all that apply):
+
+* It defines a schema that represents a resource managed by a content provider
+* ***It enables a content provider to be shared by multiple apps***
+* ***It provides additional services, such as change notification***
+* It stores data persistently in an SQLite database
+
+### Question 2: Which of the following are operations supported on content resolvers (choose all that apply):
+
+* ***bulkInsert()***
+* ***insert()***
+* bulkDelete()
+* read()
+
+### Question 3: Which of the following are actual behaviors of XML attributes that can be used to define a provider declaration in an AndroidManifest.xml file (choose all that apply):
+
+* Indicate the task that the provider has an affinity for
+* ***Designate if the content provider runs in a separate process or not***
+* ***Grant permissions to allow other apps to read or write to the provider***
+* List configuration changes that the provider will handle itself
+
+### Question 4: Which of the following are terms that appear in the acronym "ACID" (choose all that apply):
+
+* ***Atomic***
+* Database    
+* Concurrent
+* ***Isolated***
+* ***Durable***
+* Asynchronous    
+* Implicit    
+* ***Consistent***
+
+### Question 5: Which of the following are reasons why Android apps typically use concurrency or asynchrony when accessing an SQLite database (choose all that apply)
+
+* Android filesystems are unreliable due to their use of flash memory
+* ***Filesystem accesses are often relatively slow***
+* SQLite doesn't support synchronous operations    
+* SQLite supports the SQL92 specification, which is obsolete    
+
+### Question 6: Which of the following are reasons why the SQLite query() method returns a Cursor (choose all that apply): 
+
+* ***It is efficient since all data needn't be loaded into memory***
+* It alleviates the need to explicitly call close() on the Cursor
+* ***It allows buffering of query results***
+* It ensures that query results work properly in concurrent programs    
+
+### Question 7: Which of the following are reasons for using a content provider in an app (choose all that apply):
+
+* To support user-facing operations in different configuration orientations
+* ***To synchronize local data with remote data***
+* To enable long-duration operations to execute in the background
+* ***To offer complex data to other apps***
+* To launch components on-demand in response to intents from other components
+* ***To notify activities automatically when data changes***
+
+### Question 8: Which of the following are parts of a content URI (choose all that apply):
+
+* Metadata defining the synchronization policy for concurrent access
+* ***An optional pa to an individual row in a table***
+* ***The symbolic name of the provider***
+* ***A na to a table or file***
+
+### Question 9: Which of the following are motivations for content resolvers supporting content observers (choose all that apply):
+
+* To designate rows and columns to return via a cursor
+* To map content URI patterns to integer values using wildcard characters
+* ***To avoid requiring apps from having to poll for updates to data storage***
+* To initialize the associated content provider when it's first created
+
+### Question 10: Which of the following are correct statements about why the HobbitActivity defines the HobbitOps class (choose all that apply):
+
+* ***To consolidate and simplify operations on the HobbitContentProvider***
+* To manage the persistent storage of Hobbit characters
+* To create and manage the SQLite database    
+* To define the metadata and schema for the SQLite database
