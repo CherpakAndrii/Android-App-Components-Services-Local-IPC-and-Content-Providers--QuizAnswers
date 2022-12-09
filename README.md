@@ -173,7 +173,7 @@
 * bindService() incurs security and performance drawbacks
 * bindService() does not work across process boundaries
 
-## Question 4: Which of the following are correct statements about an Android handler (choose all that apply):
+### Question 4: Which of the following are correct statements about an Android handler (choose all that apply):
 
 * ***A handler can be used to send and process messages in one or more threads within a single process***
 * A handler can be used to send and process messages in one or more threads running in different processes
@@ -182,7 +182,7 @@
 * ***A handler often eliminates the need for apps to use synchronizers***
 * A handler implements the parcelable interface
 
-## Question 5: Which of the following are correct statements about an Android messenger (choose all that apply):
+### Question 5: Which of the following are correct statements about an Android messenger (choose all that apply):
 
 * ***A messenger implements the parcelable interface***
 * ***A messenger can be used to send and process messages in one or more threads within a single process***
@@ -212,7 +212,7 @@
 * It communicates this return value back to the client activity
 * It automatically restarts a killed service via a new call to onStartCommand() and supplies a null intent
 
-## Question 9: Which of the following methods must be called to implement the Android "Concurrent Service Stopping" idiom (choose all that apply):
+### Question 9: Which of the following methods must be called to implement the Android "Concurrent Service Stopping" idiom (choose all that apply):
 
 * onBind()
 * onUnbind()
@@ -225,3 +225,6 @@
 * A bound service runs in the background indefinitely until the mobile device is powered down
 * A bound service typically does not return a result to the activity that bound to it
 * ***A bound service should be used when a client component wants to have an extended conversation with the service***
+
+# Module 4
+## Coming soon
