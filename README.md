@@ -2,7 +2,7 @@
 ## Coursera quiz answers
 
 * [Module 1(100%)](https://github.com/CherpakAndrii/Android-App-Components-Services-Local-IPC-and-Content-Providers--QuizAnswers#module-1)
-* [Module 2(not ready)](https://github.com/CherpakAndrii/Android-App-Components-Services-Local-IPC-and-Content-Providers--QuizAnswers#module-2)
+* [Module 2(100%)](https://github.com/CherpakAndrii/Android-App-Components-Services-Local-IPC-and-Content-Providers--QuizAnswers#module-2)
 * [Module 3(not ready)](https://github.com/CherpakAndrii/Android-App-Components-Services-Local-IPC-and-Content-Providers--QuizAnswers#module-3)
 * [Module 4(not ready)](https://github.com/CherpakAndrii/Android-App-Components-Services-Local-IPC-and-Content-Providers--QuizAnswers#module-4)
 
@@ -78,4 +78,78 @@
 * It can help improve portability across heterogeneous Java platforms
 
 # Module 2
+
+### Question 1: Which of the following are ways in which activities in Android are designed to be "ephemeral" (choose all that apply):
+
+* ***They are destroyed and recreated to handle runtime configuration changes***
+* They can interact with the user in powerful ways
+* ***They are destroyed (and must be recreated later) when the back button is pressed***
+* They perform long-duration operations and/or access remote resources via background threads/processes
+
+### Question 2: Which of the following are types of Android services (choose all that apply):     
+
+* Background services
+* ***Scheduled services***
+* ***Bound services***
+* ***Started services***
+
+### Question 3: Which of the following are examples of Android "hybrid" services (choose all that apply): 
+
+* Alert service
+* DownloaderService
+* ***MusicPlaybackService***
+* Activity Manager Service
+
+### Question 4: Which of the following lifecycle hook methods apply to started services (choose all that apply):
+
+* onUnbind()
+* ***onDestroy()***
+* ***onStartCommand()***
+* onBind()
+* onRebind()
+* ***onCreate()***
+
+### Question 5: Which of the following service lifecycle hook methods can be dispatched by Android when a bound service is in the "running" state (choose all that apply): 
+
+* onCreate()
+* onBind()
+* onDestroy()
+* ***onUnbind()***
+
+### Question 6: Which of the following are examples of differences between the onCreate() and onStartCommand() hook methods of a started service (choose all that apply): 
+
+* ***onStartCommand() receives the intent passed by the client that calls start service, whereas onCreate() does not***
+* ***onCreate() is called once when startService() is first called, whereas onStartCommand() is called each time startService() is called.***
+* onCreate() receives the intent passed by the client that calls start service, whereas onStartCommand() does not
+* onStartCommand() is called once when startService() is first called, whereas onCreate() is called each time startService() is called
+
+### Question 7: Which of the following are correct statements about the types of intents that can be used to create activities and services (choose all that apply):
+
+* ***A service can be created via an explicit intent      
+* ***An activity can be created via an explicit intent***
+* ***An activity can be created via an implicit intent***
+* A service can be created via an implicit intent
+
+### Question 8: Which of the following are reasons why the MusicPlayer app is a simple example of a started service (choose all that apply):
+
+* ***It doesn't need to spawn any internal threads explicitly***
+* It runs the service in the same process as the activity
+* ***There's no communication from the service back to the activity that invoked it***
+* It is not started on-demand via the Activity pattern    
+
+### Question 9: Which of the following are benefits of the IntentService framework (choose all that apply):
+
+* It optimizes the scalability of concurrent services on multi-core hardware platforms
+* ***It simplifies the creation of services that process requests concurrently***
+* ***It doesn't require the complexity of the Model-View-Presenter pattern to handle runtime reconfiguration changes***
+* It enables subclasses of IntentService to interact with the user in sophisticated ways
+
+### Question 10: Which of the following explain the role of a deployment model in Android (choose all that apply):
+
+* It makes it easy to run a service in the same thread or different threads
+* ***It makes it easy to run a service in the same process or different processes***
+* It directs the physical deployment of services to threads
+* ***It directs the physical deployment of services to processes***
+
+# Module 3
 ## Coming soon
