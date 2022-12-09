@@ -3,7 +3,7 @@
 
 * [Module 1(100%)](https://github.com/CherpakAndrii/Android-App-Components-Services-Local-IPC-and-Content-Providers--QuizAnswers#module-1)
 * [Module 2(90%)](https://github.com/CherpakAndrii/Android-App-Components-Services-Local-IPC-and-Content-Providers--QuizAnswers#module-2)
-* [Module 3(not ready)](https://github.com/CherpakAndrii/Android-App-Components-Services-Local-IPC-and-Content-Providers--QuizAnswers#module-3)
+* [Module 3(100%)](https://github.com/CherpakAndrii/Android-App-Components-Services-Local-IPC-and-Content-Providers--QuizAnswers#module-3)
 * [Module 4(not ready)](https://github.com/CherpakAndrii/Android-App-Components-Services-Local-IPC-and-Content-Providers--QuizAnswers#module-4)
 
 # Module 1
@@ -152,4 +152,76 @@
 * ***It directs the physical deployment of services to processes***
 
 # Module 3
-## Coming soon
+
+### Question 1: Which of the following are limitations with using startService() to communicate between an activity and a service (choose all that apply):
+* ***startService() doesn't allow an extended "conversations"***
+* startService() incurs security and performance drawbacks
+* startService() does not allow extras to be passed with an intent in a consistent and useful manner
+* startService() does not work across process boundaries
+
+### Question 2: Which of the following are are unusual or disallowed use cases for activity and service communication (choose all that apply):
+
+* Using a messenger to communicate from a service to an activity    
+* ***Using startService() to communicate from a service to an activity***
+* ***Using a messenger to communicate from an activity to a started service***
+* ***Using a broadcast receiver to communicate from an activity to a started service***
+
+### Question 3: Which of the following are limitations with using bindService() to communicate between an activity and a service (choose all that apply):
+
+* ***bindService() does not allow extras to be passed with an intent in a consistent and useful manner***
+* bindService() doesn't allow an extended "conversations"    
+* bindService() incurs security and performance drawbacks
+* bindService() does not work across process boundaries
+
+## Question 4: Which of the following are correct statements about an Android handler (choose all that apply):
+
+* ***A handler can be used to send and process messages in one or more threads within a single process***
+* A handler can be used to send and process messages in one or more threads running in different processes
+* A handler reference can be passed as data in a message or as an extra in an intent
+* A handler can only run in the main thread of control in a process    
+* ***A handler often eliminates the need for apps to use synchronizers***
+* A handler implements the parcelable interface
+
+## Question 5: Which of the following are correct statements about an Android messenger (choose all that apply):
+
+* ***A messenger implements the parcelable interface***
+* ***A messenger can be used to send and process messages in one or more threads within a single process***
+* ***A messenger can be used to send and process messages in one or more  threads running in different processes***
+* ***A messenger reference can be passed as data in a message or as an extra in an intent***
+
+### Question 6: Which of the following are typical examples of what a started service does after it receives an intent from an activity (choose all that apply): 
+
+* It returns a Binder reference to the activity via its onBind() hook method
+* ***It obtains a reference to a messenger from the intent***
+* It launches the service using the activator pattern    
+* ***It returns results back to the activity via the messenger reference***
+* It enhances in an extended conversation with the activity    
+* ***It performs some processing***
+
+### Question 7: Which of the following are correct statements about usage considerations for messengers (choose all that apply):
+
+* Messengers are best suited for sophisticated interactions and complex data types
+* ***App developers are responsible for marshaling and demarshaling of message content***
+* Messengers shield app developers from marshaling and demarshaling details of message content
+* ***Messengers are best suited for simple interactions and data types***
+
+### Question 8: Which of the following is the behavior of the Android Activity Manager Service when the onStartCommand() hook method returns START_REDELIVER_INTENT (choose all that apply):
+
+* It does not automatically restart the killed service, which must be explicitly restarted by an app
+* ***It automatically restarts a killed service via a new call to onStartCommand() and supplies the same intent as was delivered this time***
+* It communicates this return value back to the client activity
+* It automatically restarts a killed service via a new call to onStartCommand() and supplies a null intent
+
+## Question 9: Which of the following methods must be called to implement the Android "Concurrent Service Stopping" idiom (choose all that apply):
+
+* onBind()
+* onUnbind()
+* ***onStartCommand()***
+* ***stopSelf()***
+
+### Question 10: Which of the following are correct statements about a bound service  (choose all that apply):
+
+* ***A bound service lives only while it serves other app components***
+* A bound service runs in the background indefinitely until the mobile device is powered down
+* A bound service typically does not return a result to the activity that bound to it
+* ***A bound service should be used when a client component wants to have an extended conversation with the service***
