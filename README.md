@@ -2,7 +2,7 @@
 ## Coursera quiz answers
 
 * [Module 1(100%)](https://github.com/CherpakAndrii/Android-App-Components-Services-Local-IPC-and-Content-Providers--QuizAnswers#module-1)
-* [Module 2(100%)](https://github.com/CherpakAndrii/Android-App-Components-Services-Local-IPC-and-Content-Providers--QuizAnswers#module-2)
+* [Module 2(90%)](https://github.com/CherpakAndrii/Android-App-Components-Services-Local-IPC-and-Content-Providers--QuizAnswers#module-2)
 * [Module 3(not ready)](https://github.com/CherpakAndrii/Android-App-Components-Services-Local-IPC-and-Content-Providers--QuizAnswers#module-3)
 * [Module 4(not ready)](https://github.com/CherpakAndrii/Android-App-Components-Services-Local-IPC-and-Content-Providers--QuizAnswers#module-4)
 
@@ -109,7 +109,7 @@
 * onRebind()
 * ***onCreate()***
 
-### Question 5: Which of the following service lifecycle hook methods can be dispatched by Android when a bound service is in the "running" state (choose all that apply): 
+### Question 5: Which of the following service lifecycle hook methods can be dispatched by Android when a bound service is in the "running" state (choose all that apply): (?)
 
 * onCreate()
 * onBind()
@@ -125,7 +125,7 @@
 
 ### Question 7: Which of the following are correct statements about the types of intents that can be used to create activities and services (choose all that apply):
 
-* ***A service can be created via an explicit intent      
+* ***A service can be created via an explicit intent***  
 * ***An activity can be created via an explicit intent***
 * ***An activity can be created via an implicit intent***
 * A service can be created via an implicit intent
